@@ -9,3 +9,10 @@ gc_count = filtered_sequence.count('G') + filtered_sequence.count('C')
 total_valid_bases = len(filtered_sequence)
 print (gc_count)
 print(total_valid_bases)
+
+if total_valid_bases == 0:
+    print (0.0)
+
+gc_percentage = (gc_count/total_valid_bases)*100
+print (round(gc_percentage,3))
+
