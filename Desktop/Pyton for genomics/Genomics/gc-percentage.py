@@ -1,7 +1,7 @@
 sequence= input("Provide a valid DNA sequence!: ")
 
-sequence = sequence.upper()  # Convert to uppercase
-valid_nucleotides = {'A', 'T', 'G', 'C'}  # Set of valid DNA bases  
+sequence = sequence.upper()
+valid_nucleotides = {'A', 'T', 'G', 'C'}
 filtered_sequence = [base for base in sequence if base in valid_nucleotides]
 print("The valid sequence I am working on is: ","".join(filtered_sequence))
 
@@ -14,5 +14,5 @@ if total_valid_bases == 0:
     print (0.0)
 
 gc_percentage = (gc_count/total_valid_bases)*100
-print ("The 'gc' content in this DNA sequence is = ",round(gc_percentage,3), "%")
+print ("The 'gc' % in this DNA sequence is = ",round(gc_percentage,3), "%")
 
