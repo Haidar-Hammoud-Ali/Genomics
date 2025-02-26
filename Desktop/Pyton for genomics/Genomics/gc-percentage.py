@@ -21,6 +21,7 @@ while True :
 
 
 def gc_percentage (sequence):
+    """Calculating the GC percentage of a given DNA sequence"""
     sequence = sequence.upper()
     valid_nucleotides = {'A', 'T', 'G', 'C'}
     filtered_sequence = [base for base in sequence if base in valid_nucleotides]
@@ -38,5 +39,3 @@ def gc_percentage (sequence):
         print ("The 'GC' % in this DNA sequence is = ",round(gc_percentage,3), "%")
     return (gc_percentage)
 
-result= gc_percentage ("asadcagfscdfacdascxsacxyascdtascxfasccxasdysacxyacxycadcascdyascxywqcyxcasydcayscxaytxyascdytascxgasycdyasxcysaftyascytasghxcays")
-print (result)
